@@ -55,4 +55,7 @@ router.put(
   orderStatusController
 );
 
+//all users
+router.get("/users", requireSignIn, isAdmin, getAllUsersController);
+
 export default router;
