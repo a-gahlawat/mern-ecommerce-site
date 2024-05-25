@@ -123,7 +123,7 @@ const HomePage = () => {
           <h4 className="text-center">Filter By Category</h4>
           <div className="d-flex flex-column">
             {categories?.map((c) => (
-              <Checkbox
+              <Checkbox style={{ margin : "2px"}}
                 key={c._id}
                 onChange={(e) => handleFilter(e.target.checked, c._id)}
               >
