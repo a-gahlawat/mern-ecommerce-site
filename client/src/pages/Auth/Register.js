@@ -113,6 +113,17 @@ const Register = () => {
           <button type="submit" className="btn btn-primary">
             REGISTER
           </button>
+          <div className="mt-2">
+            <button
+              type="button"
+              className="btn btn-primary"
+              onClick={() => {
+                navigate("/login");
+              }}
+            >
+              LOGIN
+            </button>
+          </div>
         </form>
       </div>
     </Layout>
